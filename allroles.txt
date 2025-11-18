@@ -1,0 +1,298 @@
+SUPERUSER =
+ - Manajemen Perusahaan / Instansi
+   ( Menambah perusahaan/instansi baru.
+     Mengedit profil perusahaan: logo, warna brand, alamat, kontak.
+     Mengatur domain/subdomain perusahaan.
+     Menghapus perusahaan (dengan verifikasi 2-step).
+     Menentukan Owner pertama untuk perusahaan.
+     Mengatur paket layanan atau kapasitas sistem per perusahaan. )
+
+ - Manajemen Owner & Global User
+   ( Menambah Owner untuk tiap perusahaan.
+     Reset password Owner dan Admin Utama.
+     Melihat seluruh user lintas perusahaan.
+     Mengaktifkan / menonaktifkan user level tinggi. )
+
+ - Global Permission & Role Matrix
+   ( Mengatur role & permission untuk semua perusahaan.
+     Mengatur fitur yang aktif/nonaktif per perusahaan.
+     Menetapkan rule approval vendor & user.
+     Mengatur limit penggunaan fitur. )
+
+ - Global Vendor Directory (Opsional)
+   ( Menambah vendor pusat yang bisa digunakan banyak perusahaan.
+     Mengedit katalog vendor global.
+     Approve vendor untuk ditampilkan ke beberapa perusahaan. )
+
+ - Konfigurasi Sistem Global
+   ( Mengatur API key: WhatsApp API, Payment Gateway, Google API.
+     Konfigurasi SMTP & email global.
+     Manajemen backup & restore database.
+     Melihat audit log lintas perusahaan.
+     Monitoring error dan integrasi. )
+
+ - Monitoring Sistem Lintas Perusahaan
+   ( Melihat total event, vendor aktif, client/catin seluruh perusahaan.
+     Monitoring storage, aktivitas user, trafik API. )
+
+OWNER =
+ - Manajemen Klien & Event
+   ( Menambah & mengedit klien/catin.
+     Menyetujui perubahan event dari Admin.
+     Mengatur detail event: paket, lokasi, tanggal, kebutuhan.
+     Approve atau menolak file invoice/contract.
+     Dapat menghapus event final. )
+
+ - Approver Utama (Seluruh Sistem)
+   ( Approve user baru dari Admin.
+     Approve vendor baru.
+     Approve perubahan harga vendor.
+     Approve voucher baru.
+     Approve perubahan konten website.
+     Approve perubahan operasional event. )
+
+ - Manajemen Vendor Rekanan & Non-Rekanan
+   ( Menambah vendor rekanan.
+     Menyetujui vendor luar yang diajukan klien atau admin.
+     Menentukan apakah vendor luar dikenakan biaya charge.
+     Mengatur nilai charge vendor luar per kategori.
+     Menampilkan vendor ke website utama. )
+
+ - Manajemen Tim Internal
+   ( Menambah user level: Admin, Staff.
+     Reset password semua user kecuali SuperUser.
+     Assign staff untuk event tertentu.
+     Menonaktifkan user tertentu jika diperlukan. )
+
+ - Keuangan & Budgeting Event
+   ( Melihat seluruh laporan keuangan.
+     Menyetujui pengeluaran vendor.
+     Menyetujui budget operasional.
+     Melihat profit/loss event.
+     Menyetujui draft invoice. )
+
+ - Voucher
+   ( Membuat voucher baru.
+     Menyetujui/menonaktifkan voucher.
+     Mengatur batas penggunaan voucher. )
+
+ - Operasional Event
+   ( Mengakses seluruh checklist.
+     Monitoring progress mingguan.
+     Mengatur timeline event.
+     Mengatur kebutuhan vendor & staf. )
+
+ - Laporan Lengkap
+   ( Laporan operasional harian/mingguan.
+     Laporan vendor.
+     Laporan profit & loss.
+     Laporan event final. )
+
+ - Manajemen Konten Landing Page
+   ( Mengedit paket.
+     Mengedit galeri portofolio.
+     Mengedit testimoni.
+     Menyetujui seluruh upload gambar dari admin/staff.
+     Konten langsung tampil tanpa approval dari siapapun. )
+
+ADMIN =
+ - Manajemen Klien & Event
+   ( Menambah calon klien baru.
+     Mengedit data event: tanggal, lokasi, paket, kebutuhan.
+     Mengelola dokumen klien: contract, invoice, DP.
+     Mengatur jadwal meeting klien.
+     Input kebutuhan event: dekorasi, make-up, catering, dokumentasi, MC & hiburan.
+     Tidak bisa menghapus event final. )
+
+ - Mengelola Vendor Rekanan
+   ( Menambah vendor tentatif.
+     Mengedit data vendor.
+     Mengunggah dokumen dan katalog vendor.
+     Mengisi profil singkat vendor.
+     Perlu approval Owner/SuperUser untuk:
+       - Menampilkan vendor ke website.
+       - Menambah vendor resmi.
+       - Update harga paket besar.
+       - Penghapusan vendor. )
+
+ - Vendor Luar (Non Rekanan)
+   ( Menginput vendor luar dari request klien.
+     Mengisi data vendor luar.
+     Sistem otomatis memberi status “perlu approval Owner”.
+     Admin dapat memberi rekomendasi biaya charge. )
+
+ - Mengelola Tim Internal
+   ( Menambah user baru untuk role: Admin, Staff, Vendor.
+     Reset password user level Staff & Vendor.
+     Assign staff untuk event tertentu.
+     Perlu approval Owner untuk user baru. )
+
+ - Input & Update Progress Event
+   ( Mengelola checklist event.
+     Mengupdate progress mingguan.
+     Menandai pekerjaan selesai.
+     Menginput status pembayaran vendor.
+     Pengingat booking venue. )
+
+ - Keuangan Dasar
+   ( Input tagihan vendor.
+     Input pengeluaran operasional.
+     Upload bukti pembayaran.
+     Membuat draft invoice.
+     Tidak bisa approve pengeluaran atau melihat profit/loss total. )
+
+ - Laporan Operasional (Non-Final)
+   ( Melihat daftar event berjalan.
+     Laporan kebutuhan event.
+     Rekap checklist.
+     Laporan harian progress.
+     Laporan vendor terpakai. )
+
+ - Voucher (Level Draft)
+   ( Menginput voucher draft.
+     Mengedit voucher sebelum approve.
+     Tidak bisa menghapus atau mengaktifkan voucher. )
+
+ - Akses Konten (Level Operasional)
+   ( Menambah galeri portofolio (pending approval).
+     Mengisi deskripsi paket.
+     Mengupload foto acara terbaru.
+     Butuh approval Owner sebelum tampil. )
+
+ADMIN =
+ - Manajemen Klien & Event
+   ( Menambah calon klien baru.
+     Mengedit data event: tanggal, lokasi, paket, kebutuhan.
+     Mengelola dokumen klien: contract, invoice, DP.
+     Mengatur jadwal meeting klien.
+     Input kebutuhan event: dekorasi, make-up, catering, dokumentasi, MC & hiburan.
+     Tidak bisa menghapus event final. )
+
+ - Mengelola Vendor Rekanan
+   ( Menambah vendor tentatif.
+     Mengedit data vendor.
+     Mengunggah dokumen dan katalog vendor.
+     Mengisi profil singkat vendor.
+     Perlu approval Owner/SuperUser untuk:
+       - Menampilkan vendor ke website.
+       - Menambah vendor resmi.
+       - Update harga paket besar.
+       - Penghapusan vendor. )
+
+ - Vendor Luar (Non Rekanan)
+   ( Menginput vendor luar dari request klien.
+     Mengisi data vendor luar.
+     Sistem otomatis memberi status “perlu approval Owner”.
+     Admin dapat memberi rekomendasi biaya charge. )
+
+ - Mengelola Tim Internal
+   ( Menambah user baru untuk role: Admin, Staff, Vendor.
+     Reset password user level Staff & Vendor.
+     Assign staff untuk event tertentu.
+     Perlu approval Owner untuk user baru. )
+
+ - Input & Update Progress Event
+   ( Mengelola checklist event.
+     Mengupdate progress mingguan.
+     Menandai pekerjaan selesai.
+     Menginput status pembayaran vendor.
+     Pengingat booking venue. )
+
+ - Keuangan Dasar
+   ( Input tagihan vendor.
+     Input pengeluaran operasional.
+     Upload bukti pembayaran.
+     Membuat draft invoice.
+     Tidak bisa approve pengeluaran atau melihat profit/loss total. )
+
+ - Laporan Operasional (Non-Final)
+   ( Melihat daftar event berjalan.
+     Laporan kebutuhan event.
+     Rekap checklist.
+     Laporan harian progress.
+     Laporan vendor terpakai. )
+
+ - Voucher (Level Draft)
+   ( Menginput voucher draft.
+     Mengedit voucher sebelum approve.
+     Tidak bisa menghapus atau mengaktifkan voucher. )
+
+ - Akses Konten (Level Operasional)
+   ( Menambah galeri portofolio (pending approval).
+     Mengisi deskripsi paket.
+     Mengupload foto acara terbaru.
+     Butuh approval Owner sebelum tampil. )
+
+STAFF =
+ - Operasional Event
+   ( Mengakses checklist.
+     Menandai tugas selesai.
+     Mengisi laporan kegiatan harian.
+     Mengunggah dokumentasi lapangan. )
+
+ - Komunikasi Vendor
+   ( Menghubungi vendor terkait kebutuhan teknis.
+     Tidak boleh mengubah harga vendor.
+     Tidak boleh mengganti vendor resmi tanpa izin Admin/Owner. )
+
+ - Support Klien di Lapangan
+   ( Pendampingan meeting.
+     Pengecekan lokasi venue.
+     Pengecekan kesiapan acara. )
+
+ - Akses Terbatas Keuangan
+   ( Upload bukti pembayaran lapangan.
+     Tidak bisa melihat laporan keuangan event. )
+
+ - Konten Lapangan
+   ( Upload foto behind the scene (pending approval).
+     Upload dokumentasi untuk portofolio (pending). )
+
+VENDOR =
+ - Profil Vendor
+   ( Mengedit data perusahaan.
+     Mengunggah katalog, paket, dan harga.
+     Melihat event yang menggunakan jasanya. )
+
+ - Order dari Event
+   ( Melihat permintaan dari tim WO.
+     Mengkonfirmasi ketersediaan.
+     Mengupload invoice vendor. )
+
+ - Update List Harga
+   ( Mengupdate paket/harga → masuk ke approval Owner. )
+
+ - Status Pembayaran
+   ( Melihat status pembayaran dari admin/owner. )
+
+ - Konten ke Website (Opsional)
+   ( Upload foto portofolio → approval Owner. )
+
+CLIENT/CATIN =
+ - Profil & Data Pribadi
+   ( Mengedit data diri.
+     Mengunggah dokumen pernikahan jika diperlukan. )
+
+ - Mengatur Event
+   ( Melihat progress event.
+     Mengisi preferensi: tema, warna, dekorasi.
+     Memilih vendor pilihan sendiri. )
+
+ - Menggunakan Vendor Luar (Non-Rekanan)
+   ( Client dapat menginput vendor luar.
+     Sistem otomatis:
+        - Menandai "Vendor Luar – Perlu Approval Owner".
+        - Menghitung biaya charge vendor luar (sesuai aturan perusahaan).
+        - Menambah biaya tambahan ke invoice klien.
+     Owner bisa:
+        - Menyetujui vendor luar.
+        - Mengubah nilai charge.
+        - Menolak vendor luar. )
+
+ - Pembayaran & Invoice
+   ( Melihat invoice.
+     Download kontrak.
+     Upload bukti pembayaran. )
+
+ - Komunikasi dengan Admin/Staff
+   ( Mengirim pesan kebutuhan atau revisi. )
